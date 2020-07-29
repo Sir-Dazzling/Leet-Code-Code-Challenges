@@ -1,0 +1,19 @@
+Question:
+
+Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+Example:
+
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+code must return [0, 1].
+
+Steps i took: 
+- I utilized an empty HashMap.
+- I looped over the elements of the array.
+- For every element in the array -
+  If the element exists in the Map, then the code checks if it’s complement which is (target - element) also exists in the Map or not. If the complement exists then it returns the indices of the current element and the complement.
+  Otherwise, it put the element in the Map, and move to the next iteration.
