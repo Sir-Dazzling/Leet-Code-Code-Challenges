@@ -8,7 +8,6 @@ public class Main {
 
     public static void main(String[] args)
     {
-	    // calling method
         int[] numArray = {2,7,11,15};
 
         //Outputting values of the returned integer array
